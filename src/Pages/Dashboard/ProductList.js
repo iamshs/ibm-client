@@ -34,6 +34,9 @@ const ProductList = () => {
                 <th class='p-2'>
                   <div class='font-semibold text-center'>Action</div>
                 </th>
+                <th class='p-2'>
+                  <div class='font-semibold text-center'></div>
+                </th>
               </tr>
             </thead>
 
@@ -74,6 +77,9 @@ const ProductList = () => {
                         </svg>
                       </button>
                     </div>
+                  </td>
+                  <td class='p-2'>
+                    <button className='font-bold'>EDIT</button>
                   </td>
                 </tr>
               ))}
