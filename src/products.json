@@ -1,8 +1,23 @@
 [
     {
         "name" : "EKWB PVC 10-12mm Tube Clamp",
+        "image" : "https://www.startech.com.bd/image/cache/catalog/water-liquid-cooling/ekwb/pvc-tube/pvc-tube-01-500x500.jpg" ,
         "Model" : "PVC Tube Clamp",
         "Price" : 180,
         "description" : "EKWB PVC 10 - 12mm Tube Clamp have been designed for fast and easy clamping to ensure that no leak ever touches your Liquid Cooling System system."
+    },
+    {
+        "name" : "EKWB PVC 10-12mm Tube Clamp",
+        "image" : "https://www.startech.com.bd/image/cache/catalog/water-liquid-cooling/ekwb/pvc-tube/pvc-tube-01-500x500.jpg" ,
+        "Model" : "PVC Tube Clamp",
+        "Price" : 180,
+        "description" : "EKWB PVC 10 - 12mm Tube Clamp have been designed for fast and easy clamping to ensure that no leak ever touches your Liquid Cooling System system."
+    },
+    {
+        "name" : "CRYORIG Socket sTR4",
+        "image" : "https://www.startech.com.bd/image/cache/catalog/cpu-cooler/cryorig/str4/cryorig-socket-str4-kit-500x500.jpg" ,
+        "Model" : "CRYORIG Socket sTR4",
+        "Price" : 180,
+        "description" : "CRYORIG Socke sTR4 Upgrade Kit is compatible with the CRYORIG R1 series, C1 series, H5 series and H7 Quad Lumi."
     }
 ]
