@@ -8,6 +8,7 @@ const loadProductData = () => {
     if (data.length) {
         
       dispatch(loadProduct(data));
+      
     }
   };
 };
