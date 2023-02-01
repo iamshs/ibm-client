@@ -1,4 +1,4 @@
-import { ADD_PRODUCT, DELETE_PRODUCT, LOAD_PRODUCT } from "../actionTypes/actionTypes";
+import {UPDATE_PRODUCT , ADD_PRODUCT, DELETE_PRODUCT, LOAD_PRODUCT } from "../actionTypes/actionTypes";
 
 const initialState = {
   products: [],
@@ -17,6 +17,11 @@ const productReducers = (state = initialState, action) => {
       };
 
       case DELETE_PRODUCT: 
+      return{
+        ...state,
+        products : state.products.filter(product => product._id !== action.payload)
+      }
+      case UPDATE_PRODUCT: 
       return{
         ...state,
         products : state.products.filter(product => product._id !== action.payload)

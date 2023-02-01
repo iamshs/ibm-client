@@ -1,0 +1,77 @@
+import React from "react";
+import { useForm } from "react-hook-form";
+import { useDispatch, useSelector } from "react-redux";
+
+
+
+
+const UpdateProduct = () => {
+    const { register, handleSubmit } = useForm();
+    
+    const dispatch = useDispatch();
+  
+    const submit = (data) => {
+      const product = {
+        
+      };
+      
+      
+    };
+    return (
+        <div className="flex justify-center items-center h-full ">
+      <form
+        className="shadow-lg p-10 rounded-md flex flex-wrap gap-3 max-w-3xl justify-between bg-white"
+        onSubmit={handleSubmit(submit)}
+      >
+        <div className="flex flex-col w-full max-w-xs">
+          <label className="mb-2" htmlFor="name">
+            Name
+          </label>
+          <input type="text" id="name" {...register("name")} />
+        </div>
+        <div className="flex flex-col w-full max-w-xs">
+          <label className="mb-2" htmlFor="model">
+            Model
+          </label>
+          <input type="text" id="model" {...register("model")} />
+        </div>
+        <div className="flex flex-col w-full max-w-xs">
+          <label className="mb-2" htmlFor="image">
+            Image
+          </label>
+          <input type="text" name="image" id="image" {...register("image")} />
+        </div>
+
+        <div className="flex flex-col w-full max-w-xs">
+          <label className="mb-2" htmlFor="price">
+            Price
+          </label>
+          <input type="text" name="price" id="price" {...register("price")} />
+        </div>
+        <div className="flex flex-col w-full max-w-xs">
+          <label className="mb-2" htmlFor="price">
+            Description
+          </label>
+          <input
+            type="text"
+            name="description"
+            id="description"
+            {...register("description")}
+          />
+        </div>
+        <div className="flex flex-col w-full max-w-xs"></div>
+
+        <div className="flex justify-between items-center w-full">
+          <button
+            className=" px-6 py-3 bg-sky-600 hover:bg-sky-800 rounded-md font-semibold text-white text-lg disabled:bg-gray-500"
+            type="submit"
+          >
+            Add
+          </button>
+        </div>
+      </form>
+    </div>
+    );
+};
+
+export default UpdateProduct;

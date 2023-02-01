@@ -1,5 +1,6 @@
 import React, { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
+import { Link } from 'react-router-dom';
 import deleteProductData from '../../redux/thunk/products/deleteData';
 import loadProductData from '../../redux/thunk/products/fetchData';
 
@@ -82,7 +83,9 @@ const ProductList = () => {
                     </div>
                   </td>
                   <td className='p-2'>
-                    <button className=' font-bold hover:text-sky-600 hover:bg-gray-100'>EDIT</button>
+                   <Link to={'update-product'} >
+                   <button className=' font-bold hover:text-sky-600 hover:bg-gray-100'>EDIT</button>
+                   </Link>
                   </td>
                 </tr>
               ))}
